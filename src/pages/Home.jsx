@@ -20,22 +20,22 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center items-center order-1 lg:order-2">
-            <div className="w-[35rem] h-[30rem] bg-hero-photo bg-cover bg-center"></div>
+            <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[35rem] xl:h-[30rem] bg-hero-photo bg-cover bg-center"></div>
           </div>
         </div>
         <div className="pb-10 lg:py-0">
-          <div className="mt-10 text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
-            <div>
+          <div className="mt-10 lg:mt-24 text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
+          <div>
               <img
                 src="/camera.svg"
                 className="lg:w-16 w-12 mt-2"
                 alt="fireminecrat creeper"
               />
             </div>
-            <button className=" lg:text-4xl font-display text-sm font-medium hover:-translate-y-1 hover:text-primary transition-all">
+            <button className=" lg:text-3xl xl:text-4xl font-display text-base font-medium hover:-translate-y-1 hover:text-primary transition-all">
               CHECK MY RECENT WORKS
             </button>
-            <BsChevronDoubleDown className="text-3xl" />
+            <BsChevronDoubleDown className=" text-lg lg:text-3xl" />
           </div>
         </div>
       </div>
