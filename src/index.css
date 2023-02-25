@@ -4,3 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --cursor-color: rgba(40, 41, 31);;
+  --cursor-bg-color: rgba(40, 41, 31, 0.0);
+}
