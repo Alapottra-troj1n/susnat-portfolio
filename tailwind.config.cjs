@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ffc300',
+        primary: '#ee6c4d',
         secondary: '#fdfcdc',
   
       },
@@ -14,8 +14,9 @@ module.exports = {
       }
     },
     fontFamily: {
-        'primary': 'Open Sans',
-        'display': 'Lora'
+        'primary': 'Lato',
+        'display': 'Playfair Display',
+        'hand': 'Dancing Script'
     },
   
   },
