@@ -19,7 +19,7 @@ const Introduction = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-5 mt-5">
             <p className="font-hand font-medium text-2xl lg:text-3xl xl:text-4xl text-primary whitespace-nowrap">Creating visual stories, one shot at a time.</p>
-            <p className="font-primary font-light hover:font-black transition-all lg:text-xl xl:text-2xl tracking-widest text-primary lg:relative xl:top-12 lg:top-12 xl:right-[230px] lg:right-[200px] whitespace-nowrap">LET'S CONNECT</p>
+            <p className="font-primary font-light transition-all lg:text-xl xl:text-2xl tracking-widest text-primary lg:relative xl:top-12 lg:top-12 xl:right-[230px] lg:right-[200px] whitespace-nowrap">LET'S CONNECT</p>
             </div>
           </div>
 
