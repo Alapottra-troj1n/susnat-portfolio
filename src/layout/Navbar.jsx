@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex md:hidden z-40" >
            {navOpen ? <VscClose className="text-3xl" onClick={()=> setNavOpen(!navOpen)} /> :  <VscMenu className="text-2xl" onClick={()=> setNavOpen(!navOpen)} /> } 
         </div>
-        <div className={`${navOpen ? 'flex ' : 'hidden'} flex-col absolute right-0 md:hidden gap-5 top-7 bg-white px-10 pb-12 pt-14 border rounded-md text-sm items-center`}>
+        <div className={`${navOpen ? 'flex ' : 'hidden'} flex-col absolute right-0 md:hidden gap-5 top-5 bg-white px-10 pb-12 pt-14 border rounded-md text-sm items-center`}>
         <Link>
             <li>Testomonials</li>
           </Link>
