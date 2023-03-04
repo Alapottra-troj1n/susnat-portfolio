@@ -7,4 +7,8 @@
 html {
   --cursor-color: rgba(40, 41, 31);;
   --cursor-bg-color: rgba(40, 41, 31, 0.0);
+  
+}
+body{
+  color: #333333 
 }

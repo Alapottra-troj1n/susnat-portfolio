@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, A11y } from "swiper";
+import { Navigation, Pagination, A11y,Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
 import "swiper/css";
@@ -38,7 +38,7 @@ const Testimonials = () => {
         <h2 className=" lg:text-5xl font-display text-base font-thin text-center">
           TESTIMONIALS
         </h2>
-        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-base  ">
+        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-base">
           My satisfied clients are the heartbeat of our business. Their
           testimonials speak to my commitment to exceptional service and
           delivering outstanding results.
@@ -64,12 +64,17 @@ const Testimonials = () => {
             paddingLeft: "10px",
             paddingRight: "10px",
             "--swiper-navigation-color": "#000000",
+            "--swiper-navigation-size": "30px",
           }}
-          modules={[Navigation, Pagination, A11y]}
+          modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={30}
           navigation
           pagination={{
             clickable: true,
+          }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
           }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}

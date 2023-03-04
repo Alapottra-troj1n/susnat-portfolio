@@ -3,12 +3,12 @@ import { VscMenu } from "react-icons/vsc";
 import { VscClose } from "react-icons/vsc";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({scrolled}) => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
     <header>
-      <div className="px-5 lg:px-36 py-4 font-display  flex justify-between items-center fixed w-full z-10 bg-white list-none z-50">
+      <div className={`px-5 lg:px-36 py-4 font-display  flex justify-between items-center fixed w-full ${scrolled ? 'drop-shadow-md': ''} bg-white list-none z-50`}>
         <div className="gap-5 text-xl hidden md:flex">
           <Link to='/'>
             <li>Testomonials</li>
