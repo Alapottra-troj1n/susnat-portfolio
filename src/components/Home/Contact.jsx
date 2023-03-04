@@ -15,7 +15,8 @@ const Contact = () => {
         <div className="flex justify-center">
           <form className="mt-20 flex flex-col gap-4">
             <input type="email" name="email" placeholder="Email" className="border border-gray-500 w-[30rem] p-3" />
-            <input type="text" name="username" placeholder="Username" className="border border-gray-500 w-[30rem] p-3" />
+            <input type="text" name="username" placeholder="Your Name" className="border border-gray-500 w-[30rem] p-3" />
+            <input type="text" name="address" placeholder="Address" className="border w-[30rem] p-3 border-gray-500" />
             <div className="flex flex-col gap-2">
             <label className="font-semibold">Event Date :</label>
             <input type="date" placeholder="Date of the event" name="date" className="border-gray-500 border p-3" />
@@ -30,9 +31,10 @@ const Contact = () => {
             </select>
             </div>
             <input type="number" name="phone" placeholder="Phone Number" className="border w-[30rem] p-3 border-gray-500" />
+  
 
             <div>
-                <button className="py-3 px-7 text-white font-display bg-primary ">CONNECT</button>
+                <button className="py-3 px-7 text-white font-display bg-primary ">SUBMIT</button>
             </div>
           </form>
         </div>

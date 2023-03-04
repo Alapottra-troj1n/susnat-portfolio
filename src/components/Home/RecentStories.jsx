@@ -56,7 +56,7 @@ const RecentStories = () => {
           </div>
         </div>
       <div className="container mx-auto px-5 my-10">
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {content}
         </div>
         <div className="text-center mt-10 flex flex-col justify-center items-center">

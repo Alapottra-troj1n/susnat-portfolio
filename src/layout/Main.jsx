@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useEffect,useState } from "react";
+import Footer from "./Footer";
 
 const Main = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,6 +28,7 @@ const Main = () => {
     <div>
       <Navbar scrolled={scrolled} />
       <Outlet />
+      <Footer/>
     </div>
   );
 };

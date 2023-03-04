@@ -2,7 +2,7 @@ import { GoQuote } from 'react-icons/go';
 const TestimonialCard = ({testimonial}) => {
     console.log(testimonial)
     return (
-        <div className="bg-white h-[27rem] shadow-sm p-5 flex flex-col justify-between gap-5">
+        <div className="bg-white min-h-[27rem]  shadow-sm p-5 flex flex-col justify-between gap-5">
             <div className="mt-4 text-gray-800">
             <GoQuote className="text-5xl text-secondary/30 mb-2" />
                 <p className="font-primary tracking-wide leading-7 text-sm" >{testimonial.testimonial}</p>
