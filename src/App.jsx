@@ -9,7 +9,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    
     dispatch(setLoading(false));
   }, []);
 
