@@ -40,7 +40,7 @@ const Introduction = () => {
       
           
            <div className="flex items-center text-sm lg:text-2xl lg:mt-5 gap-5 bg-gray-500 p-3 px-7 rounded-md text-white">
-            <a href="callto:01732452435" >
+            <a href="tel:123-456-7890" >
               <FiPhoneCall className="hover:text-primary transition-all" />
             </a>
             <a href="mailto:csusnata@gmail.com">
