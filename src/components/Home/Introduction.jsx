@@ -1,5 +1,6 @@
-const Introduction = () => {
+import { FiCalendar, FiMail, FiPhoneCall } from "react-icons/fi";
 
+const Introduction = () => {
   return (
     <div className="bg-white pt-[5rem] py-20 lg:py-52">
       <div className=" flex flex-col justify-center mx-auto ">
@@ -9,27 +10,48 @@ const Introduction = () => {
               Heyyy There
             </h1>
             <p className="text-sm mt-4 font-display text-left lg:text-base xl:text-lg text-gray-700 font-medium tracking-wide lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-8">
-              My Name is Susnat Chakma, a photographer with a keen eye for
-              detail and a passion for capturing stunning images, I bring over 5
-              years of experience creating unforgettable visual stories. I take
-              great pride in understanding my client's vision and transforming
-              their ideas into impactful images that tell a compelling story.
+              Searching for a creative and friendly photographer in Melbourne
+              for your special day? I am Susnat Chakma, a passionate
+              photographer with over 5 years of experience in capturing
+              stunning, personalized images. Let's connect and bring your vision
+              to life, whether it's a wedding, engagement, or any other special
+              occasion!
             </p>
-            <div className="flex flex-col lg:flex-row items-center gap-5 mt-5">
+            <div className="flex flex-col items-center gap-5 mt-3">
               <p className="font-hand font-medium text-2xl lg:text-3xl xl:text-4xl text-primary whitespace-nowrap">
-                Creating visual stories, one shot at a time.
+                Let's capture some memories together!
               </p>
-              <p className="font-primary font-light transition-all lg:text-xl xl:text-2xl tracking-widest text-primary lg:relative xl:top-12 lg:top-12 xl:right-[230px] lg:right-[200px] whitespace-nowrap">
-                LET'S CONNECT
-              </p>
+              
             </div>
+            
           </div>
 
           <div className="flex justify-center items-center order-1">
             <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[33rem] bg-hero-photo bg-cover bg-center"></div>
           </div>
         </div>
-        
+        <div className="flex flex-col justify-center items-center mt-7 px-5">
+          {/* <p className="font-primary hidden lg:block text-xs lg:text-lg uppercase text-gray-500 tracking-wider text-center lg:text-left leading-6">
+            Want to hop on a <span className="text-gray-800"> call ?</span> send
+            me an <span className="text-gray-800">email</span>, or{" "}
+            <span className="text-gray-800">schedule a meeting </span> to
+            discuss your photography needs ?
+          </p> */}
+      
+          
+           <div className="flex items-center text-sm lg:text-2xl lg:mt-5 gap-5 bg-gray-500 p-3 px-7 rounded-md text-white">
+            <a href="callto:01732452435" >
+              <FiPhoneCall className="hover:text-primary transition-all" />
+            </a>
+            <a href="mailto:csusnata@gmail.com">
+              <FiMail className="hover:text-primary transition-all" />
+            </a>
+            <span>
+              <FiCalendar className="hover:text-primary transition-all" />
+            </span>
+          </div>
+         
+        </div>
       </div>
     </div>
   );
