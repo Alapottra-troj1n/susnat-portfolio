@@ -5,7 +5,7 @@ import RecentStories from "../components/Home/RecentStories";
 import Testimonials from "../components/Home/Testimonials";
 
 
-const Home = () => {
+const Home = ({scrolled}) => {
   
   return (
    <div>

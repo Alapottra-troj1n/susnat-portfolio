@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isLoading: true,
   isError: false,
+  scroll: 0,
 };
 
 const appSlice = createSlice({
@@ -12,7 +13,10 @@ const appSlice = createSlice({
 
         setLoading: (state,action) => {
             state.isLoading = action.payload
-        }
+        },
+        setScroll: (state,action) => {
+          state.scroll = action.payload
+      }
 
   }
 
@@ -24,6 +28,6 @@ const appSlice = createSlice({
 
 
 
-export const { setLoading } = appSlice.actions;
+export const { setLoading,setScroll } = appSlice.actions;
 
 export default appSlice.reducer;

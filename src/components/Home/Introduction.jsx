@@ -1,6 +1,7 @@
-import { FiCalendar, FiMail, FiPhoneCall } from "react-icons/fi";
 
-const Introduction = () => {
+import CallToAction from "../reusables/CallToAction";
+
+const Introduction = ({scrolled}) => {
   return (
     <div className="bg-white pt-[5rem] py-20 lg:py-52">
       <div className=" flex flex-col justify-center mx-auto ">
@@ -32,23 +33,13 @@ const Introduction = () => {
         </div>
         <div className="flex flex-col justify-center items-center mt-7 px-5">
           <p className="font-display hidden lg:block text-xs lg:text-lg  text-gray-500 tracking-wider text-center lg:text-left leading-6">
-            Want to hop on a <span className="text-gray-800"> call ?</span> send
-            me an <span className="text-gray-800">email</span>, or{" "}
-            <span className="text-gray-800">schedule a meeting </span> to
+            Want to hop on a <span className="text-gray-800 font-semibold"> call ?</span> send
+            me an <span className="text-gray-800 font-semibold">email</span>, or{" "}
+            <span className="text-gray-800 font-semibold">schedule a meeting </span> to
             discuss your photography needs ?
           </p>
       
-           <div className="flex items-center text-sm md:text-base lg:text-2xl lg:mt-5 gap-5 bg-gray-500 p-3 px-7 rounded-md text-white">
-            <a href="tel:123-456-7890" >
-              <FiPhoneCall className="hover:text-primary transition-all" />
-            </a>
-            <a href="mailto:csusnata@gmail.com">
-              <FiMail className="hover:text-primary transition-all" />
-            </a>
-            <span>
-              <FiCalendar className="hover:text-primary transition-all" />
-            </span>
-          </div>
+      <CallToAction scrolled={scrolled}/>
          
         </div>
       </div>
