@@ -48,7 +48,7 @@ const Navbar = ({scrolled}) => {
             <li>Stories</li>
           </Link>
           <Link to='/'>
-            <li>Connect with me</li>
+            <li>Contact</li>
           </Link>
         </div>
         <div className="gap-5 text-xl hidden md:flex">
@@ -56,7 +56,7 @@ const Navbar = ({scrolled}) => {
             <li>Stories</li>
           </Link>
           <Link to='/'>
-            <li>Connect</li>
+            <li>Contact</li>
           </Link>
         </div>
       </div>

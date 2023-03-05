@@ -31,15 +31,14 @@ const Introduction = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-7 px-5">
-          {/* <p className="font-primary hidden lg:block text-xs lg:text-lg uppercase text-gray-500 tracking-wider text-center lg:text-left leading-6">
+          <p className="font-display hidden lg:block text-xs lg:text-lg  text-gray-500 tracking-wider text-center lg:text-left leading-6">
             Want to hop on a <span className="text-gray-800"> call ?</span> send
             me an <span className="text-gray-800">email</span>, or{" "}
             <span className="text-gray-800">schedule a meeting </span> to
             discuss your photography needs ?
-          </p> */}
+          </p>
       
-          
-           <div className="flex items-center text-sm lg:text-2xl lg:mt-5 gap-5 bg-gray-500 p-3 px-7 rounded-md text-white">
+           <div className="flex items-center text-sm md:text-base lg:text-2xl lg:mt-5 gap-5 bg-gray-500 p-3 px-7 rounded-md text-white">
             <a href="tel:123-456-7890" >
               <FiPhoneCall className="hover:text-primary transition-all" />
             </a>
