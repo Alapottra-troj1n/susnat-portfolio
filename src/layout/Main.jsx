@@ -29,7 +29,7 @@ const Main = () => {
 
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar scrolled={scrolled} />
       <Outlet />
       <Footer/>

@@ -4,16 +4,16 @@ const Contact = () => {
   return (
     <div>
       <div className="container mx-auto px-5 py-32 h-screen">
-        <h2 className=" lg:text-5xl font-display text-base font-thin text-center">
+        <h2 className=" lg:text-5xl font-display text-3xl font-thin text-center">
           REQUEST A BOOKING
         </h2>
-        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-base  ">
+        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm leading-6  ">
           Life is a collection of moments, and I'm here to capture them for you.
           Let's connect and turn your vision into a visual story that will be
           cherished for a lifetime.
         </p>
         <div className="flex justify-center">
-          <form className="mt-20 flex flex-col gap-4">
+          {/* <form className="mt-20 flex flex-col gap-4">
             <input type="email" name="email" placeholder="Email" className="border border-gray-500 w-[30rem] p-3" />
             <input type="text" name="username" placeholder="Your Name" className="border border-gray-500 w-[30rem] p-3" />
             <input type="text" name="address" placeholder="Address" className="border w-[30rem] p-3 border-gray-500" />
@@ -36,7 +36,7 @@ const Contact = () => {
             <div>
                 <button className="py-3 px-7 text-white font-display bg-primary ">SUBMIT</button>
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>

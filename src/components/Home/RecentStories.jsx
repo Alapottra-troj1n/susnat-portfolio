@@ -43,13 +43,13 @@ const RecentStories = () => {
   }
 
   return (
-    <div className="bg-secondary/5 py-32" >
+    <div className="bg-secondary/5 py-32 px-5" >
       <div className="pb-5">
           <div className=" text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
-            <h2 className=" lg:text-5xl font-display text-base font-thin">
+            <h2 className=" lg:text-5xl font-display text-3xl font-thin">
               RECENT STORIES
             </h2>
-            <h2 className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-base  ">
+            <h2 className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm leading-6  ">
               I love to help people embrace imperfections and cherish genuine
               moments, creating a meaningful experience to treasure forever.
             </h2>
@@ -60,8 +60,8 @@ const RecentStories = () => {
           {content}
         </div>
         <div className="text-center mt-10 flex flex-col justify-center items-center">
-            <Link className="text-3xl font-display hover:scale-105 transition-all" to='/'>VIEW MORE STORIES</Link>
-            <div className="w-[15rem] border-t border-red-600  mt-3"></div>
+            <Link className="text-xl lg:text-3xl font-display hover:scale-105 transition-all" to='/'>VIEW MORE STORIES</Link>
+            <div className="w-[8rem] lg:w-[15rem] border-t border-red-600  mt-3"></div>
         </div>
       
       </div>
