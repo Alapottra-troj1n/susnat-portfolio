@@ -1,5 +1,4 @@
 const cursorChange = function(color){
-    console.log(color)
     document.documentElement.style.setProperty(
       "--cursor-color",
       `rgba(${color})`

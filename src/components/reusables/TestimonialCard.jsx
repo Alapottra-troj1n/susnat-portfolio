@@ -1,6 +1,5 @@
 import { GoQuote } from 'react-icons/go';
 const TestimonialCard = ({testimonial}) => {
-    console.log(testimonial)
     return (
         <div className="bg-white min-h-[27rem]  shadow-sm p-5 flex flex-col justify-between gap-5">
             <div className="mt-4 text-gray-800">

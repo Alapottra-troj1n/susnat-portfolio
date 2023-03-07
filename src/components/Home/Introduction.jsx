@@ -1,7 +1,12 @@
 
 import CallToAction from "../reusables/CallToAction";
 
-const Introduction = ({scrolled}) => {
+const Introduction = ({appointment}) => {
+
+  const scrolltoAppointment = () => {
+    appointment.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="bg-white pt-[5rem] py-20 lg:py-52">
       <div className=" flex flex-col justify-center mx-auto ">
@@ -39,7 +44,7 @@ const Introduction = ({scrolled}) => {
             discuss your photography needs ?
           </p>
       
-      <CallToAction scrolled={scrolled}/>
+      <CallToAction scrolltoAppointment={scrolltoAppointment} />
          
         </div>
       </div>

@@ -12,7 +12,6 @@ const Main = () => {
   useEffect(() => {
     function handleScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(scrollTop)
       dispatch(setScroll(window.pageYOffset))
       if (scrollTop > 802) {
         setScrolled(true);

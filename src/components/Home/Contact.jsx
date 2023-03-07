@@ -1,18 +1,17 @@
 import React from "react";
+import CalendlyWidget from "../reusables/CalendlyWidget";
 
-const Contact = () => {
+const Contact = ({appointment}) => {
   return (
     <div>
-      <div className="container mx-auto px-5 py-32 h-screen">
+      <div ref={appointment} className="container mx-auto px-5 py-32 h-screen mb-20">
         <h2 className=" lg:text-5xl font-display text-3xl font-thin text-center">
-          REQUEST A BOOKING
+          SHEDULE A MEETING
         </h2>
         <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm leading-6  ">
-          Life is a collection of moments, and I'm here to capture them for you.
-          Let's connect and turn your vision into a visual story that will be
-          cherished for a lifetime.
+        Are you ready to create some amazing memories? Schedule a meeting and let's chat about how we can make that happen together!
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10 mb-10 h-full ">
           {/* <form className="mt-20 flex flex-col gap-4">
             <input type="email" name="email" placeholder="Email" className="border border-gray-500 w-[30rem] p-3" />
             <input type="text" name="username" placeholder="Your Name" className="border border-gray-500 w-[30rem] p-3" />
@@ -37,6 +36,7 @@ const Contact = () => {
                 <button className="py-3 px-7 text-white font-display bg-primary ">SUBMIT</button>
             </div>
           </form> */}
+          <CalendlyWidget />
         </div>
       </div>
     </div>

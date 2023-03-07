@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Brands from "../components/Home/Brands";
 import Contact from "../components/Home/Contact";
 import Introduction from "../components/Home/Introduction";
@@ -5,15 +6,16 @@ import RecentStories from "../components/Home/RecentStories";
 import Testimonials from "../components/Home/Testimonials";
 
 
-const Home = ({scrolled}) => {
-  
+const Home = () => {
+  const appointment = useRef(null);
+
   return (
    <div>
-    <Introduction/>
+    <Introduction appointment={appointment} />
     <RecentStories/>
     <Brands/>
     <Testimonials/>
-    <Contact/>
+    <Contact appointment={appointment}/>
    </div>
   );
 };

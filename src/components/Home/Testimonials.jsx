@@ -76,8 +76,8 @@ const Testimonials = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+    
+      
         >
           {content}
         </Swiper>
