@@ -14,8 +14,8 @@ module.exports = {
       }
     },
     fontFamily: {
-        'primary': 'Lato',
-        'display': 'Playfair Display',
+        'primary': 'Urbanist',
+        'display': 'Philosopher',
         'hand': 'Dancing Script'
     },
   

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import cursorChange from "../../utils/cursorChange";
 
 const CalendlyWidget = () => {
   useEffect(() => {
