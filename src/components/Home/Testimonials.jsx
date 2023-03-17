@@ -43,8 +43,8 @@ const Testimonials = () => {
           TESTIMONIALS
         </h2>
         <div
-          className="text-lg mt-3 tracking-wider text-center  font-primary  ">
-          <h2>
+          className="text-lg mt-3 tracking-wider text-center  font-primary  px-[25rem]">
+          <h2 className="leading-6">
             My satisfied clients are the heartbeat of our business. Their
             testimonials speak to my commitment to exceptional service and
             delivering outstanding results.

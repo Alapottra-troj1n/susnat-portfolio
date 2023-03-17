@@ -8,9 +8,11 @@ const Contact = ({appointment}) => {
         <h2 className=" lg:text-5xl font-display text-3xl font-thin text-center">
           SHEDULE A MEETING
         </h2>
-        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm leading-6  ">
+       <div className="px-[25rem] lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm">
+       <p className=" leading-6">
         Are you ready to create some amazing memories? Schedule a meeting and let's chat about how we can make that happen together!
         </p>
+       </div>
         <div className="flex justify-center mt-10 mb-10 h-full ">
           <CalendlyWidget />
         </div>
