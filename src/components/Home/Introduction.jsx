@@ -6,7 +6,7 @@ const Introduction = ({ appointment }) => {
   };
 
   return (
-    <div className="bg-white pt-[5rem] py-20 lg:py-52">
+    <div className="bg-white pt-[5rem] py-20 lg:pt-52">
       <div className=" flex flex-col justify-center mx-auto ">
         <div className="container mx-auto px-5 grid lg:grid-cols-2 grid-cols-1 gap-10 lg:relative">
           <div
@@ -28,12 +28,11 @@ const Introduction = ({ appointment }) => {
             <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[33rem] bg-hero-photo bg-cover bg-center rounded-md"></div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center mt-7 px-5">
-          
-{/* 
-          <CallToAction scrolltoAppointment={scrolltoAppointment} /> */}
-        </div>
+      
       </div>
+      <div>
+          <CallToAction scrolltoAppointment={scrolltoAppointment} />
+        </div>
     </div>
   );
 };
