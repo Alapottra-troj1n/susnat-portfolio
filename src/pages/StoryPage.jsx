@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const StoryPage = () => {
-
+  
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const templatePhoto = 'https://images.squarespace-cdn.com/content/v1/56f65cf85559866730c088c2/1618687504509-UXMM5M7A0L0V43XPATKY/YOGL6872.jpg?format=2500w'
     return (
        <div >

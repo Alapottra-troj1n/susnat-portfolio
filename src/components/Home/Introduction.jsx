@@ -13,7 +13,7 @@ const Introduction = ({ appointment }) => {
             className="flex flex-col justify-center items-start order-2 "
           >
             <img src="/hey.svg" className="w-[25rem]" alt="" />
-            <p className="text-sm font-primary mt-4  pr-24 text-left lg:text-base xl:text-lg text-gray-600 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7">
+            <p className="text-sm font-primary mt-4  pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
               Searching for a creative and friendly photographer in Melbourne
               for your special day? I am Susnat Chakma, a passionate
               photographer with over 5 years of experience in capturing

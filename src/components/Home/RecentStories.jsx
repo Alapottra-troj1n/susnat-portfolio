@@ -45,7 +45,7 @@ const RecentStories = () => {
   }
 
   return (
-    <div className="bg-secondary/5 py-32 px-5">
+    <div className="bg-slate-400/5 py-32 px-5">
       <div className="pb-5">
         <div className=" text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
           <h2 className=" lg:text-6xl font-display text-3xl font-thin">
@@ -55,7 +55,7 @@ const RecentStories = () => {
             className=" lg:text-lg mt-0 tracking-wider text-center px-[37rem] font-primary text-sm
             "
           >
-            <h2 className="leading-6">
+            <h2 className="leading-6 text-gray-500">
               I love to help people embrace imperfections and cherish genuine
               moments, creating a meaningful experience to treasure forever.
             </h2>
@@ -63,7 +63,7 @@ const RecentStories = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-5 my-10">
+      <div className="container mx-auto px-56 my-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {content}
         </div>

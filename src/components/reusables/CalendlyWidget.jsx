@@ -14,7 +14,7 @@ const CalendlyWidget = () => {
 
   return (
     <div
-      className="calendly-inline-widget h-full w-full"
+      className="calendly-inline-widget h-full w-full font-primary"
       data-url="https://calendly.com/stan-visuals01/30min?primary_color=ffa520"
     />
   );
