@@ -16,7 +16,7 @@ module.exports = {
     fontFamily: {
         'primary': 'Urbanist',
         'display': 'Philosopher',
-        'hand': 'Dancing Script'
+        'hand': 'Covered By Your Grace'
     },
   
   },

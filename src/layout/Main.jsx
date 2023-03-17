@@ -13,7 +13,7 @@ const Main = () => {
     function handleScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       dispatch(setScroll(window.pageYOffset))
-      if (scrollTop > 802) {
+      if (scrollTop > 401) {
         setScrolled(true);
       } else {
         setScrolled(false);

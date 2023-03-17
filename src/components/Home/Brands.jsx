@@ -8,7 +8,7 @@ const Brands = () => {
   return (
     <div>
       <div className="container mx-auto px-5 py-32">
-        <h2 className=" lg:text-5xl font-display text-3xl font-thin text-center mb-16 leading-10">
+        <h2 className=" lg:text-6xl font-display text-3xl font-thin text-center mb-16 leading-10">
           BRANDS AND COLLABORATIONS
         </h2>
         <div className="flex gap-10 mt-10 items-center justify-center flex-wrap">

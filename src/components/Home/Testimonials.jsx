@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, A11y,Autoplay } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
 import "swiper/css";
@@ -28,21 +28,28 @@ const Testimonials = () => {
       });
   }, []);
 
-  if(testimonials){
-    content = testimonials.map(testimonial => <SwiperSlide><TestimonialCard testimonial={testimonial} /></SwiperSlide>)
+  if (testimonials) {
+    content = testimonials.map((testimonial) => (
+      <SwiperSlide>
+        <TestimonialCard testimonial={testimonial} />
+      </SwiperSlide>
+    ));
   }
 
   return (
     <div className="bg-secondary/5 pb-32">
       <div className="  container mx-auto px-5 py-32">
-        <h2 className=" lg:text-5xl font-display text-3xl font-thin text-center">
+        <h2 className=" lg:text-6xl font-display text-3xl font-thin text-center">
           TESTIMONIALS
         </h2>
-        <p className=" lg:text-lg mt-4 tracking-wider text-center  font-primary text-sm leading-6  ">
-          My satisfied clients are the heartbeat of our business. Their
-          testimonials speak to my commitment to exceptional service and
-          delivering outstanding results.
-        </p>
+        <div
+          className="text-lg mt-3 tracking-wider text-center  font-primary  ">
+          <h2>
+            My satisfied clients are the heartbeat of our business. Their
+            testimonials speak to my commitment to exceptional service and
+            delivering outstanding results.
+          </h2>
+        </div>
       </div>
 
       <div className="container mx-auto">
@@ -76,8 +83,6 @@ const Testimonials = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-    
-      
         >
           {content}
         </Swiper>
