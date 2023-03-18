@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoUnmute, GoMute } from "react-icons/go";
 const HeroSection = () => {
-  const [mute, setMute] = useState(false);
+  const [mute, setMute] = useState(true);
   console.log(mute);
 
   return (
