@@ -6,14 +6,17 @@ const HeroSection = () => {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted={mute ? true : false}
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 scale-150"
-      >
-        <source src="/video.mp4" type="video/mp4" />
-      </video>
+
+      <iframe
+      className="scale-150"
+        title="video-background"
+        width="100%"
+        height="100%"
+        src={`https://www.youtube.com/embed/ELK5du6HhzY?autoplay=1&loop=1&mute=${mute ? '1' : '0'}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      />
       <div className="absolute inset-0 flex items-center justify-center z-10 bottom-[-54rem] left-[113rem]">
         {!mute ? (
           <button onClick={() => setMute(true)}>
