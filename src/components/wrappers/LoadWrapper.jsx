@@ -8,7 +8,7 @@ const LoadWrapper = ({children}) => {
   
 
     if(isLoading) {
-        return <div className="h-screen flex justify-center items-center bg-secondary"><Spinner/> </div>
+        return <div className="h-screen flex justify-center items-center bg-white"><Spinner/> </div>
     }
 
     return (

@@ -3,6 +3,7 @@ import routes from "./routes/routes";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setLoading } from "./features/appSlice/appSlice";
+import LoadWrapper from "./components/wrappers/LoadWrapper";
 
 function App() {
   const dispatch = useDispatch();
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div>
-          <RouterProvider router={routes} />
+      <LoadWrapper>   <RouterProvider router={routes} /></LoadWrapper>
+       
     </div>
   );
 }

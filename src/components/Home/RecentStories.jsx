@@ -3,38 +3,39 @@ import { useState, useEffect } from "react";
 import client from "../../utils/sanity";
 import PhotoCard from "../reusables/PhotoCard";
 import { Link } from "react-router-dom";
+import Spinner from "../reusables/Spinner";
 
 const RecentStories = () => {
   const [stories, setStories] = useState([]);
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     client
       .fetch(
         `*[_type == "story" && publishedAt < now()] | order(_createdAt desc) [0...5] {
           "slug": slug.current,
           "_id": _id,
           "title": title,
-          "category": categories[]->title,
           "mainImage": mainImagePC.asset->url,
-          "description": description,
-          "photo1": photo1,
-          "photo2": photo2,
-          "photo3": photo3,
-          "photo4": photo4,
-          "photo5": photo5,
-          "photo6": photo6,
-          "photo7": photo7,
-          "photo8": photo8,
-          "photo9": photo9,
-          "photo10": photo10
-          
         }
         `
       )
       .then((data) => {
         setStories(data);
-      });
+        setLoading(false)
+      })
+      .catch((err)=> {
+          console.log(err)
+          setLoading(false)
+      })
   }, []);
+
+
+
+  if(loading){
+    <div className="py-32 px-5 flex justify-center items-center bg-white"><Spinner/> </div>
+  }
 
   let content;
 

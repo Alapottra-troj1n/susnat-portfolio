@@ -4,7 +4,7 @@ const Spinner = () => {
 
     return (
         <div>
-            <div className="lds-facebook"><div></div><div></div><div></div></div>
+           <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
         </div>
     );
 };
