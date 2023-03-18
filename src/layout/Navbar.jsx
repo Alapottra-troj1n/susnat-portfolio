@@ -11,10 +11,10 @@ const Navbar = ({ scrolled }) => {
   return (
     <header>
       <div
-        className={`px-5 lg:px-36 py-4 font-display  flex justify-between items-center  text-slate-700 fixed w-full ${
+        className={`px-5 lg:px-36 py-4 font-display  flex justify-between items-center  fixed w-full ${
           location.pathname.includes("/story/")
             ? "bg-transparent text-white"
-            : "bg-white text-black"
+            : "bg-white text-slate-700"
         }  ${scrolled && "drop-shadow-md bg-white text-slate-700"}  list-none z-50`}
       >
         <div className="gap-5 text-xl hidden md:flex">
