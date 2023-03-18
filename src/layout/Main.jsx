@@ -8,6 +8,7 @@ import { setScroll } from "../features/appSlice/appSlice";
 const Main = () => {
   const [scrolled, setScrolled] = useState(false);
   const dispatch = useDispatch();
+ 
 
   useEffect(() => {
     function handleScroll() {
