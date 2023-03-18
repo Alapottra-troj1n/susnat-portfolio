@@ -14,8 +14,8 @@ const Navbar = ({ scrolled }) => {
         className={`px-5 lg:px-36 py-4 font-display  flex justify-between items-center fixed w-full ${
           location.pathname.includes("/story/")
             ? "bg-transparent text-white"
-            : "bg-white"
-        }  ${scrolled && "drop-shadow-md bg-white text-black"}  list-none z-50`}
+            : "bg-white text-black"
+        }  ${scrolled && "drop-shadow-md bg-white text-slate-800"}  list-none z-50`}
       >
         <div className="gap-5 text-xl hidden md:flex">
           <Link to="/">
