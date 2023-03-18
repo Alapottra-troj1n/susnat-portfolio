@@ -34,7 +34,7 @@ const RecentStories = () => {
 
 
   if(loading){
-    <div className="py-32 px-5 flex justify-center items-center bg-white"><Spinner/> </div>
+    return <div className="bg-slate-400/5 py-32 flex justify-center items-center "><Spinner/> </div>
   }
 
   let content;
