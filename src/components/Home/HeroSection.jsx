@@ -5,7 +5,7 @@ const HeroSection = () => {
   console.log(mute);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="hidden lg:block relative h-screen overflow-hidden">
 
       <iframe
       className="scale-150"

@@ -6,12 +6,10 @@ const Introduction = ({ appointment }) => {
   };
 
   return (
-    <div className="bg-white pt-[5rem] py-20 lg:pt-52">
+    <div className="bg-white pt-[7rem] py-20 lg:pt-52">
       <div className=" flex flex-col justify-center mx-auto ">
         <div className="container mx-auto px-5 grid lg:grid-cols-2 grid-cols-1 gap-10 lg:relative">
-          <div
-            className="flex flex-col justify-center items-start order-2 "
-          >
+          <div className="flex flex-col justify-center items-start order-2 ">
             <img src="/hey.svg" className="w-[25rem]" alt="" />
             <p className="text-sm font-primary mt-4  pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
               Searching for a creative and friendly photographer in Melbourne
@@ -25,14 +23,24 @@ const Introduction = ({ appointment }) => {
           </div>
 
           <div className="flex justify-end items-center order-1">
-            <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[33rem] bg-hero-photo bg-cover bg-center rounded-md"></div>
+            <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[33rem] bg-hero-photo bg-cover bg-center rounded-md overflow-hidden">
+              <iframe 
+                className="scale-150 lg:hidden"
+                title="video-background"
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/ELK5du6HhzY?autoplay=1&loop=1&mute=0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              />
+            </div>
           </div>
         </div>
-      
       </div>
       <div>
-          <CallToAction scrolltoAppointment={scrolltoAppointment} />
-        </div>
+        <CallToAction scrolltoAppointment={scrolltoAppointment} />
+      </div>
     </div>
   );
 };

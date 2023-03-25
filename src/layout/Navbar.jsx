@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { VscMenu } from "react-icons/vsc";
 import { VscClose } from "react-icons/vsc";
 import { useState } from "react";
@@ -6,13 +6,11 @@ import { useState } from "react";
 const Navbar = ({ scrolled }) => {
   const [navOpen, setNavOpen] = useState(false);
 
-  const location = useLocation();
-  console.log(scrolled);
   return (
     <header>
       <div
-        className={`px-5 lg:px-36 py-4 font-display flex justify-between items-center fixed w-full  ${
-          scrolled ? "drop-shadow-md bg-white text-slate-700" : 'text-white'
+        className={`px-5   lg:px-36 py-4 font-display flex justify-between items-center fixed w-full  ${
+          scrolled ? "drop-shadow-md bg-white text-slate-700" : "lg:text-white bg-white lg:bg-inherit"
         } list-none z-50`}
       >
         <div className="gap-5 text-xl hidden md:flex">
@@ -25,16 +23,23 @@ const Navbar = ({ scrolled }) => {
         </div>
         <div>
           {scrolled ? (
-            <Link to="/">
-              <img src="/logo.svg" className="w-16 md:w-20" alt="" />
-            </Link>
+            <>
+              <Link to="/">
+                <img src="/logo.svg" className="w-16 md:w-20" alt="" />
+              </Link>
+            </>
           ) : (
-            <Link to="/">
-              <img src="/logo-white.svg" className="w-16 md:w-20" alt="" />
-            </Link>
+            <>
+              <Link to="/">
+                <img src="/logo-white.svg" className="hidden lg:block w-16 md:w-20" alt="" />
+              </Link>
+              <Link to="/">
+                <img src="/logo.svg" className="w-16 md:w-20 lg:hidden" alt="" />
+              </Link>
+            </>
           )}
         </div>
-        <div className="flex md:hidden z-40">
+        <div className="flex md:hidden z-40 cursor-pointer">
           {navOpen ? (
             <VscClose
               className="text-3xl"
