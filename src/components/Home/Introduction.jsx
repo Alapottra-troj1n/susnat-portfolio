@@ -9,9 +9,9 @@ const Introduction = ({ appointment }) => {
     <div className="bg-white pt-[7rem] py-20 lg:pt-52">
       <div className=" flex flex-col justify-center mx-auto ">
         <div className="container mx-auto px-5 grid lg:grid-cols-2 grid-cols-1 gap-10 lg:relative">
-          <div className="flex flex-col justify-center items-start order-2 ">
-            <img src="/hey.svg" className="w-[25rem]" alt="" />
-            <p className="text-sm font-primary mt-4  pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
+          <div className="flex flex-col justify-center items-center lg:items-start order-2 ">
+            <img src="/hey.svg" className="w-[20rem] lg:w-[20rem] xl:w-[25rem]" alt="" />
+            <p className="text-sm font-primary mt-4 pr-10  2xl:pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
               Searching for a creative and friendly photographer in Melbourne
               for your special day? I am Susnat Chakma, a passionate
               photographer with over 5 years of experience in capturing
@@ -22,7 +22,7 @@ const Introduction = ({ appointment }) => {
             <div className="flex flex-col items-center gap-5 mt-3"></div>
           </div>
 
-          <div className="flex justify-end items-center order-1">
+          <div className="flex justify-center items-center order-1">
             <div className="w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[33rem] bg-hero-photo bg-cover bg-center rounded-md overflow-hidden">
               <iframe 
                 className="scale-150 lg:hidden"

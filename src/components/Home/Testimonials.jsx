@@ -39,11 +39,11 @@ const Testimonials = () => {
   return (
     <div className="bg-slate-400/5 pb-32">
       <div className="  container mx-auto px-5 py-32">
-        <h2 className=" lg:text-6xl font-display text-3xl font-thin text-center">
+        <h2 className=" text-4xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           TESTIMONIALS
         </h2>
         <div
-          className="text-lg mt-3 tracking-wider text-center  font-primary  px-[25rem]">
+          className="text-xs md:text-sm lg:text-lg mt-3 tracking-wider text-center  font-primary px-[2rem]  xl:px-[16rem] 2xl:px-[25rem]">
           <h2 className="leading-6 text-gray-500">
             My satisfied clients are the heartbeat of our business. Their
             testimonials speak to my commitment to exceptional service and
@@ -52,7 +52,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <Swiper
           breakpoints={{
             640: {

@@ -49,11 +49,11 @@ const RecentStories = () => {
     <div className="bg-slate-400/5 py-32 px-5">
       <div className="pb-5">
         <div className=" text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
-          <h2 className=" lg:text-6xl font-display text-3xl font-thin">
+          <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
             RECENT STORIES
           </h2>
           <div
-            className=" lg:text-lg mt-0 tracking-wider text-center px-[37rem] font-primary text-sm
+            className=" md:text-sm lg:text-lg mt-0 tracking-wider text-center px-[2rem] md:px-[10rem] lg:px-[15rem] xl:px-[20rem] 2xl:px-[37rem] font-primary text-xs
             "
           >
             <h2 className="leading-6 text-gray-500">
@@ -64,7 +64,7 @@ const RecentStories = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-56 my-10">
+      <div className="container mx-auto px-7 md:px-9 lg:px-14 xl:px-28 2xl:px-56 my-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {content}
         </div>
