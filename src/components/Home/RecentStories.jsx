@@ -44,6 +44,10 @@ const RecentStories = () => {
       <PhotoCard key={story._id} story={story} />
     ));
   }
+  if (!stories) {
+    content = <p className="text-center">No Stories Found</p>
+  }
+
 
   return (
     <div className="bg-slate-400/5 py-32 px-5">

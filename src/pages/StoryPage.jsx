@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/reusables/Spinner";
 import client from "../utils/sanity";
-
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import 'react-photo-view/dist/react-photo-view.css';
 const StoryPage = () => {
   const [story, setStory] = useState({});
   const { slug } = useParams();
@@ -44,9 +45,12 @@ const StoryPage = () => {
       });
   }, []);
 
-
-  if(loading){
-    return <div className="h-screen flex justify-center items-center bg-white"><Spinner/> </div>
+  if (loading) {
+    return (
+      <div className="h-screen flex justify-center items-center bg-white">
+        <Spinner />{" "}
+      </div>
+    );
   }
   const bgPhoto = story.mainImage;
   const date = new Date(story.publishedAt);
@@ -67,32 +71,60 @@ const StoryPage = () => {
       </div>
       <div className="py-24 lg:px-96 px-10">
         <p className="text-gray-400 font-normal leading-8 font-primary">
-         {story.description}
+          {story.description}
         </p>
+        <PhotoProvider maskOpacity={0.5}  toolbarRender={({ onScale, scale }) => {
+    return (
+      <>
+        <svg className="PhotoView-Slider__toolbarIcon" onClick={() => onScale(scale + 1)} />
+        <svg className="PhotoView-Slider__toolbarIcon" onClick={() => onScale(scale - 1)} />
+      </>
+    );
+  }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+            <PhotoView  src={story.photo1}>
+              <img className="cursor-pointer" src={story.photo1} alt="" />
+            </PhotoView>
+            <PhotoView  src={story.photo2}>
+              <img className="cursor-pointer" src={story.photo2} alt="" />
+            </PhotoView>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] mt-20 gap-5">
-          <div style={{ backgroundImage: `url(${story.photo1})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-          <div style={{ backgroundImage: `url(${story.photo2})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+            <PhotoView src={story.photo3}>
+              <img className="cursor-pointer" src={story.photo3} alt="" />
+            </PhotoView>
+            <PhotoView  src={story.photo4}>
+              <img className="cursor-pointer" src={story.photo4} alt="" />
+            </PhotoView>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[40%,60%] mt-5 gap-5">
-        <div style={{ backgroundImage: `url(${story.photo3})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        <div style={{ backgroundImage: `url(${story.photo4})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+            <PhotoView src={story.photo5}>
+              <img className="cursor-pointer" src={story.photo5} alt="" />
+            </PhotoView>
+            <PhotoView  src={story.photo6}>
+              <img className="cursor-pointer" src={story.photo6} alt="" />
+            </PhotoView>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+            <PhotoView src={story.photo7}>
+              <img className="cursor-pointer" src={story.photo7} alt="" />
+            </PhotoView>
+            <PhotoView  src={story.photo8}>
+              <img className="cursor-pointer" src={story.photo8} alt="" />
+            </PhotoView>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] mt-5 gap-5">
-        <div style={{ backgroundImage: `url(${story.photo5})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        <div style={{ backgroundImage: `url(${story.photo6})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-[40%,60%] mt-5 gap-5">
-        <div style={{ backgroundImage: `url(${story.photo7})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        <div style={{ backgroundImage: `url(${story.photo8})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] mt-5 gap-5">
-        <div style={{ backgroundImage: `url(${story.photo9})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        <div style={{ backgroundImage: `url(${story.photo10})` }} className="bg-cover bg-center bg-no-repeat h-[35rem] "></div>
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+            <PhotoView src={story.photo9}>
+              <img className="cursor-pointer" src={story.photo9} alt="" />
+            </PhotoView>
+            <PhotoView  src={story.photo10}>
+              <img className="cursor-pointer" src={story.photo10} alt="" />
+            </PhotoView>
+          </div>
+        </PhotoProvider>
       </div>
     </div>
   );

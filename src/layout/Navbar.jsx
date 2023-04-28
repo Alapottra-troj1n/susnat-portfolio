@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { VscMenu } from "react-icons/vsc";
 import { VscClose } from "react-icons/vsc";
 import { useState } from "react";
 
 const Navbar = ({ scrolled }) => {
   const [navOpen, setNavOpen] = useState(false);
+  const location = useLocation()
 
   return (
     <header>
       <div
         className={`px-5   lg:px-36 py-4 font-display flex justify-between items-center fixed w-full  ${
-          scrolled ? "drop-shadow-md bg-white text-slate-700" : "lg:text-white bg-white lg:bg-inherit"
+          scrolled || location.pathname.includes('/stories')  ? "drop-shadow-md bg-white text-slate-700" : "lg:text-white bg-white lg:bg-inherit"
         } list-none z-50`}
       >
         <div className="gap-5 text-xl hidden md:flex">
@@ -22,7 +23,7 @@ const Navbar = ({ scrolled }) => {
           </Link>
         </div>
         <div>
-          {scrolled ? (
+          {scrolled || location.pathname.includes('/stories') ? (
             <>
               <Link to="/">
                 <img src="/logo.svg" className="w-16 md:w-20" alt="" />
@@ -63,7 +64,7 @@ const Navbar = ({ scrolled }) => {
           <Link to="/">
             <li>About Us</li>
           </Link>
-          <Link to="/">
+          <Link to="/stories">
             <li>Stories</li>
           </Link>
           <Link to="/">
@@ -71,7 +72,7 @@ const Navbar = ({ scrolled }) => {
           </Link>
         </div>
         <div className="gap-5 text-xl hidden md:flex">
-          <Link to="/">
+          <Link to="/stories">
             <li>Stories</li>
           </Link>
           <Link to="/">
