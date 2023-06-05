@@ -10,7 +10,7 @@ export default function Stories() {
           Photography
         </p>
       </div>
-      <div className="pt-16 pb-52 grid grid-cols-3 px-64 mx-auto text-center gap-8">
+      <div className="pt-16 pb-10 lg:pb-52 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-20 lg:px-64 mx-auto text-center gap-8">
         <Link to='/stories/wedding' >
           <div style={{ backgroundImage: `url(${'/wedding.jpg'})` }} className="relative rounded-md overflow-hidden min-h-[25rem] p-5 bg-cover text-white tracking-widest">
           <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-100 hover:opacity-0 transition duration-500 ease-out"></div>
