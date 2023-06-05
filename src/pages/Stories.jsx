@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Stories() {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <div>
       <div className="pt-44 lg:px-36 bg-cover bg-center ">

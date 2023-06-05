@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Spinner from "../components/reusables/Spinner";
 import client from "../utils/sanity";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import 'react-photo-view/dist/react-photo-view.css';
+import "react-photo-view/dist/react-photo-view.css";
 const StoryPage = () => {
   const [story, setStory] = useState({});
   const { slug } = useParams();
@@ -62,30 +62,39 @@ const StoryPage = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${bgPhoto})` }}
-        className="pt-44 pb-20 px-5 lg:px-36 bg-cover bg-center text-white h-[75vh]"
+        className="2xl:pt-44 2xl:pb-20 py-24 px-5 lg:px-36 bg-cover bg-center text-white 2xl:h-[75vh]"
       >
         <h2 className="font-hand text-6xl text-center mt-56">{story.title}</h2>
         <p className="text-center font-primary font-semibold text-xl mt-14">
           {formattedDate}
         </p>
       </div>
-      <div className="py-24 lg:px-96 px-10">
+      <div className="py-24 lg:px-40 2xl:px-96 px-10">
         <p className="text-gray-400 font-normal leading-8 font-primary">
           {story.description}
         </p>
-        <PhotoProvider maskOpacity={0.5}  toolbarRender={({ onScale, scale }) => {
-    return (
-      <>
-        <svg className="PhotoView-Slider__toolbarIcon" onClick={() => onScale(scale + 1)} />
-        <svg className="PhotoView-Slider__toolbarIcon" onClick={() => onScale(scale - 1)} />
-      </>
-    );
-  }}>
+        <PhotoProvider
+          maskOpacity={0.5}
+          toolbarRender={({ onScale, scale }) => {
+            return (
+              <>
+                <svg
+                  className="PhotoView-Slider__toolbarIcon"
+                  onClick={() => onScale(scale + 1)}
+                />
+                <svg
+                  className="PhotoView-Slider__toolbarIcon"
+                  onClick={() => onScale(scale - 1)}
+                />
+              </>
+            );
+          }}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
-            <PhotoView  src={story.photo1}>
+            <PhotoView src={story.photo1}>
               <img className="cursor-pointer" src={story.photo1} alt="" />
             </PhotoView>
-            <PhotoView  src={story.photo2}>
+            <PhotoView src={story.photo2}>
               <img className="cursor-pointer" src={story.photo2} alt="" />
             </PhotoView>
           </div>
@@ -94,7 +103,7 @@ const StoryPage = () => {
             <PhotoView src={story.photo3}>
               <img className="cursor-pointer" src={story.photo3} alt="" />
             </PhotoView>
-            <PhotoView  src={story.photo4}>
+            <PhotoView src={story.photo4}>
               <img className="cursor-pointer" src={story.photo4} alt="" />
             </PhotoView>
           </div>
@@ -103,7 +112,7 @@ const StoryPage = () => {
             <PhotoView src={story.photo5}>
               <img className="cursor-pointer" src={story.photo5} alt="" />
             </PhotoView>
-            <PhotoView  src={story.photo6}>
+            <PhotoView src={story.photo6}>
               <img className="cursor-pointer" src={story.photo6} alt="" />
             </PhotoView>
           </div>
@@ -111,7 +120,7 @@ const StoryPage = () => {
             <PhotoView src={story.photo7}>
               <img className="cursor-pointer" src={story.photo7} alt="" />
             </PhotoView>
-            <PhotoView  src={story.photo8}>
+            <PhotoView src={story.photo8}>
               <img className="cursor-pointer" src={story.photo8} alt="" />
             </PhotoView>
           </div>
@@ -120,7 +129,7 @@ const StoryPage = () => {
             <PhotoView src={story.photo9}>
               <img className="cursor-pointer" src={story.photo9} alt="" />
             </PhotoView>
-            <PhotoView  src={story.photo10}>
+            <PhotoView src={story.photo10}>
               <img className="cursor-pointer" src={story.photo10} alt="" />
             </PhotoView>
           </div>
