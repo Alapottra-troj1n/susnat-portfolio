@@ -10,6 +10,7 @@ const RecentStories = () => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setLoading(true)
     client
       .fetch(
