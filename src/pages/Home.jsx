@@ -11,7 +11,7 @@ const Home = () => {
   const appointment = useRef(null);
 
   return (
-   <div>
+   <div className="transition-all">
     <HeroSection/>
     <Introduction appointment={appointment} />
     <RecentStories/>

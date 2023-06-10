@@ -6,7 +6,7 @@ const Introduction = ({ appointment }) => {
   };
 
   return (
-    <div className="bg-white pt-[7rem] py-20 lg:pt-52">
+    <div id="aboutme" className="bg-white pt-[7rem] py-20 lg:pt-52">
       <div className=" flex flex-col justify-center mx-auto ">
         <div className="container mx-auto px-5 grid lg:grid-cols-2 grid-cols-1 gap-10 lg:relative">
           <div className="flex flex-col justify-center items-center lg:items-start order-2 ">
