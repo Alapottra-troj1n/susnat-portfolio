@@ -85,17 +85,17 @@ const Navbar = ({ scrolled }) => {
           <Link to="/stories">
             <li>Stories</li>
           </Link>
-          <Link to="/">
+          <span className='cursor-pointer' onClick={()=> scrollToIntro('contact')}>
             <li>Contact</li>
-          </Link>
+          </span>
         </div>
         <div className="gap-5 text-xl hidden md:flex">
           <Link to="/stories">
             <li>Stories</li>
           </Link>
-          <Link to="/">
+          <span className='cursor-pointer' onClick={()=> scrollToIntro('contact')}>
             <li>Contact</li>
-          </Link>
+          </span>
         </div>
       </div>
     </header>

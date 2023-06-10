@@ -3,7 +3,7 @@ import CalendlyWidget from "../reusables/CalendlyWidget";
 
 const Contact = ({appointment}) => {
   return (
-    <div>
+    <div id="contact">
       <div ref={appointment} className="container mx-auto px-5 py-32 h-screen mb-20">
         <h2 className=" text-4xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           SHEDULE A MEETING
