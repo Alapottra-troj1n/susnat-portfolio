@@ -30,15 +30,15 @@ export default function Wedding() {
   console.log(weddings);
 
   return (
-    <div className="pt-36 pb-10">
-      <h2 className="text-center font-display text-3xl">
+    <div className="pt-36 pb-10 px-10">
+      <h2 className="text-center font-display lg:text-3xl text-xl  font-bold">
         Love's Eternal Bond: Capturing the Magic of Matrimony
       </h2>
-      <p className="font-primary text-center mt-3 text-lg">
+      <p className="font-primary text-center mt-3 text-sm lg:text-lg">
         Preserving Your Wedding Day, One Click at a Time
       </p>
 
-      <div className="px-20 mx-auto grid grid-cols-4 py-6 mt-10">
+      <div className=" lg:px-20 mx-auto grid grid-cols-2 lg:grid-cols-4 py-6 mt-10 gap-5">
         {weddings &&
           weddings.map((story) => (
             <PhotoCard key={story.slug} story={story} />

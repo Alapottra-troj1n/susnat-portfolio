@@ -45,7 +45,7 @@ const RecentStories = () => {
       <PhotoCard key={story.slug} story={story} />
     ));
   }
-  if (!stories.length) {
+  if (!stories.length && !stories) {
     content = <p className="text-center">No Stories Found</p>
   }
 
