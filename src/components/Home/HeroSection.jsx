@@ -2,36 +2,29 @@ import { useEffect, useRef, useState } from "react";
 import { GoUnmute, GoMute } from "react-icons/go";
 const HeroSection = () => {
   const [mute, setMute] = useState(true);
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    videoRef.current.muted = true;
-  }, []);
 
   return (
     <div className="hidden lg:block relative h-screen overflow-hidden">
-      <video
-        ref={videoRef}
-        className="scale-150 "
+      <iframe
+        className="scale-150"
         title="video-background"
         width="100%"
         height="100%"
-        loop
-        muted={mute}
-        controls={true}
-        
-      >
-        <source src="/video.mp4" type="video/mp4" />
-        {/* Add additional source elements for different video formats if needed */}
-      </video>
+        src={`https://www.youtube.com/embed/ELK5du6HhzY?autoplay=1&loop=1&mute=${
+          mute ? "1" : "0"
+        }&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      />
       <div>
         <span className="z-50 absolute bottom-4 right-7">
           {!mute ? (
-            <button onClick={() => setMute("true")}>
+            <button onClick={() => setMute(true)}>
               <GoUnmute className="text-white text-2xl" />
             </button>
           ) : (
-            <button onClick={() => setMute("false")}>
+            <button onClick={() => setMute(false)}>
               <GoMute className="text-white text-2xl" />
             </button>
           )}

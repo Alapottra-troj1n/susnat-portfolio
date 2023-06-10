@@ -29,7 +29,7 @@ const Introduction = ({ appointment }) => {
                 title="video-background"
                 width="100%"
                 height="100%"
-                src={`https://www.youtube.com/embed/ELK5du6HhzY?autoplay=1&loop=1&mute=0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
+                src={`https://www.youtube.com/embed/ELK5du6HhzY?autoplay=0&loop=1&mute=0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
