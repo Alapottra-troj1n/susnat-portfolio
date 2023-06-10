@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="absolute left-1/2 -translate-x-1/2  bottom-2">
-        <p className="text-xs lg:text-md">Copyright 2023. All rights reversed by Susnata Chakma</p>
+        <p className="text-xs lg:text-md whitespace-nowrap">Copyright 2023. All rights reversed by Susnata</p>
       </div>
     </div>
   );
