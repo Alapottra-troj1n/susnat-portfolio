@@ -10,7 +10,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
       >
         <a
           className=" rounded-xl p-5 lg:p-12 flex flex-col items-center gap-10 px-24"
-          href="tel:123-456-7890"
+          href="tel:+61415865704"
         >
           <button className="font-primary  border-2 py-4 px-7 whitespace-nowrap border-gray-700 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all">
             Let's have a call
@@ -22,7 +22,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
         </a>
         <a
           className="rounded-xl p-5 lg:p-12 flex flex-col items-center gap-10 px-24"
-          href="mailto:csusnata@gmail.com"
+          href="mailto:stan.visuals01@gmail.com"
         >
           <button className="font-primary  border-2 py-4 px-7 whitespace-nowrap border-gray-700 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all">
             Mail me if you are busy
