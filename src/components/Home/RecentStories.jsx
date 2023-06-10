@@ -76,7 +76,7 @@ const RecentStories = () => {
         <div className="text-center mt-10 flex flex-col justify-center items-center">
           <Link
             className="text-xl lg:text-3xl font-display hover:scale-105 transition-all"
-            to="/"
+            to="/stories"
           >
             VIEW MORE STORIES
           </Link>
