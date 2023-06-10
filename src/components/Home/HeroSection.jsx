@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { GoUnmute, GoMute } from "react-icons/go";
 const HeroSection = () => {
-  const [mute, setMute] = useState("true");
+  const [mute, setMute] = useState(true);
   const videoRef = useRef(null);
 
   useEffect(() => {
-
-    videoRef.current.defaultMuted = true;
     videoRef.current.muted = true;
   }, []);
 

@@ -42,7 +42,7 @@ const RecentStories = () => {
 
   if (stories) {
     content = stories.map((story) => (
-      <PhotoCard key={story._id} story={story} />
+      <PhotoCard key={story.slug} story={story} />
     ));
   }
   if (!stories.length) {

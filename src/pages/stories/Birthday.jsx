@@ -14,6 +14,7 @@ export default function Birthday() {
   }`;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setLoading(true);
     client
       .fetch(query)
@@ -26,7 +27,6 @@ export default function Birthday() {
         setLoading(false);
       });
   }, []);
-  console.log(birthdays);
 
   return (
     <div className="pt-36 pb-10">
@@ -37,14 +37,14 @@ export default function Birthday() {
         Preserving Your Special Day, One Click at a Time
       </p>
 
-      <div className="px-20 mx-auto grid grid-cols-3 py-6 mt-10">
+      <div className="px-20 mx-auto grid grid-cols-4 py-6 mt-10">
         {birthdays && (
-          birthdays.map((story) => <PhotoCard story={story} />)
+          birthdays.map((story) => <PhotoCard key={story.slug} story={story} />)
         )}
 
       </div>
       {
-        !birthdays && <p className="text-center">No Stories Found</p>
+        !birthdays || !birthdays.length && <p className="text-center">No Stories Found</p>
       }
     </div>
   );

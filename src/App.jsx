@@ -14,8 +14,9 @@ function App() {
 
   return (
     <div>
-      <LoadWrapper>   <RouterProvider router={routes} /></LoadWrapper>
-       
+      <LoadWrapper>
+        <RouterProvider router={routes} />
+      </LoadWrapper>
     </div>
   );
 }

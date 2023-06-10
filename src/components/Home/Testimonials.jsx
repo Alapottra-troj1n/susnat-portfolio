@@ -30,7 +30,7 @@ const Testimonials = () => {
 
   if (testimonials) {
     content = testimonials.map((testimonial) => (
-      <SwiperSlide>
+      <SwiperSlide key={testimonial.name}>
         <TestimonialCard testimonial={testimonial} />
       </SwiperSlide>
     ));
