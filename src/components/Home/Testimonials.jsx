@@ -39,15 +39,13 @@ const Testimonials = () => {
   return (
     <div id="testomonials" className="bg-slate-400/5 pb-32">
       <div className="  container mx-auto px-5 py-32">
-        <h2 className=" text-4xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
+        <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           TESTIMONIALS
         </h2>
         <div
           className="text-xs md:text-sm lg:text-lg mt-3 tracking-wider text-center  font-primary px-[2rem]  xl:px-[16rem] 2xl:px-[25rem]">
           <h2 className="leading-6 text-gray-500">
-            My satisfied clients are the heartbeat of our business. Their
-            testimonials speak to my commitment to exceptional service and
-            delivering outstanding results.
+            My satisfied clients are the heartbeat of the business.
           </h2>
         </div>
       </div>
