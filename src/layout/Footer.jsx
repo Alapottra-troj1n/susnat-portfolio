@@ -8,11 +8,11 @@ const Footer = () => {
         <div>
           <h3 className="font-display text-2xl">Get In Touch</h3>
           <div className="flex flex-col mt-2">
-            <a className="text-gray-500" href="mailto:csusnata@gmail.com">
-              csusnata@gmail.com
+            <a className="text-gray-500" href="mailto:stan.visuals01@gmail.com">
+            stan.visuals01@gmail.com
             </a>
-            <a className="text-gray-500" href="mailto:csusnata@gmail.com">
-              connect@stanvisuals.com
+            <a className="text-gray-500" href="tel:+61415865704">
+              +61415865704
             </a>
           </div>
         </div>
