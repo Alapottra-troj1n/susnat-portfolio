@@ -8,7 +8,7 @@ export default function Stories() {
 
   return (
     <div>
-      <div className="pt-44 pb-20 lg:px-36 px-10 bg-cover bg-center ">
+      <div className="pt-44 lg:px-36 px-10 bg-cover bg-center ">
         <h2 className="font-display text-4xl lg:text-6xl text-center ">
           Stories
         </h2>
