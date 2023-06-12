@@ -6,7 +6,7 @@ const Contact = ({ appointment }) => {
     <div id="contact">
       <div
         ref={appointment}
-        className="container mx-auto px-5 py-32 h-screen mb-20"
+        className="container mx-auto px-5 py-32 min-h-screen"
       >
         <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           SHEDULE A MEETING
@@ -17,8 +17,10 @@ const Contact = ({ appointment }) => {
             together!
           </p>
         </div>
-        <div className="flex justify-center mt-10 mb-10 h-full ">
+        <div className="flex justify-center mt-10 mb-10 h-screen ">
+          <div className="h-full w-full">
           <CalendlyWidget />
+          </div>
         </div>
       </div>
     </div>

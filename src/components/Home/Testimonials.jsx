@@ -18,7 +18,7 @@ const Testimonials = () => {
             "_id": id,
             "designation": designation,
             "name": name,
-            "testimonial": testomonial,
+            "testimonial": testimonial,
             "image": clientPhoto.asset->url
           }
             `
@@ -27,6 +27,8 @@ const Testimonials = () => {
         setTestimonials(data);
       });
   }, []);
+
+  console.log(testimonials)
 
   if (testimonials) {
     content = testimonials.map((testimonial) => (
