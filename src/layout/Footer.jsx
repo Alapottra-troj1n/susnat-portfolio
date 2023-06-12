@@ -19,10 +19,10 @@ const Footer = () => {
         <div>
           <h3 className="font-display text-2xl">Social Media</h3>
           <div className="flex flex-col mt-2">
-            <a className="text-gray-500" href="mailto:csusnata@gmail.com">
-              Linkedin
+            <a className="text-gray-500" href="https://www.facebook.com/profile.php?id=100091904503239">
+              Facebook
             </a>
-            <a className="text-gray-500" href="mailto:csusnata@gmail.com">
+            <a className="text-gray-500" href="https://www.instagram.com/stanvisuals_official">
               Instagram
             </a>
           </div>
@@ -31,7 +31,6 @@ const Footer = () => {
         <div>
           <h3 className="font-display text-2xl">Quick Links</h3>
           <div className="flex flex-col mt-2 text-gray-500">
-                <Link>About Me</Link>
                 <Link>Stories</Link>
                 <Link>Testimonials</Link>
           </div>

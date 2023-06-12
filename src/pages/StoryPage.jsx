@@ -61,16 +61,19 @@ const StoryPage = () => {
   return (
     <div>
       <div
-        style={{ backgroundImage: `url(${bgPhoto})` }}
+        style={{ backgroundImage: `url(${bgPhoto})`}}
+        
         className="2xl:pt-44 2xl:pb-20 py-24 px-5 lg:px-36 bg-cover bg-center text-white 2xl:h-[75vh]"
       >
-        <h2 className="font-hand text-6xl text-center mt-56">{story.title}</h2>
-        <p className="text-center font-primary font-semibold text-xl mt-14">
+  
+
+        <h2 className="font-hand text-3xl lg:text-6xl text-center mt-56">{story.title}</h2>
+        <p className="text-center font-primary font-semibold lg:text-xl text-base mt-3">
           {formattedDate}
         </p>
       </div>
       <div className="py-24 lg:px-40 2xl:px-96 px-10">
-        <p className="text-gray-400 font-normal leading-8 font-primary">
+        <p className="text-gray-400 font-normal leading-8 font-primary text-sm lg:text-base">
           {story.description}
         </p>
         <PhotoProvider

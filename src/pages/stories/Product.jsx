@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import client from "../../utils/sanity";
 import PhotoCard from "../../components/reusables/PhotoCard";
+import Spinner from "../../components/reusables/Spinner";
 
 export default function Product() {
   const [loading, setLoading] = useState(false);
@@ -27,8 +28,12 @@ export default function Product() {
       });
   }, []);
 
+  if(loading){
+    return <div className="bg-slate-400/5 py-32 flex justify-center items-center min-h-screen"><Spinner/> </div>
+  }
+
   return (
-    <div className="pt-36 pb-10 px-10">
+    <div className="pt-36 pb-10 px-10 min-h-screen">
       <h2 className="text-center font-display lg:text-3xl text-xl  font-bold">
       Shining Spotlight: Illuminating Product Photography Mastery
       </h2>
