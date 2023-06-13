@@ -22,7 +22,7 @@ const Footer = () => {
             <a className="text-gray-500" href="https://www.facebook.com/profile.php?id=100091904503239">
               Facebook
             </a>
-            <a className="text-gray-500" href="https://www.instagram.com/stanvisuals_official">
+            <a className="text-gray-500" href="https://www.instagram.com/sc_visual_portfolio/">
               Instagram
             </a>
           </div>
