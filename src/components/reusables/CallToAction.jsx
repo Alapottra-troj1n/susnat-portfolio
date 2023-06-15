@@ -16,9 +16,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           <button className="font-primary  border-2 py-4 px-7 whitespace-nowrap border-gray-700 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all">
             Let's have a call
           </button>
-          <p className="text-xs md:text-sm font-primary font-semibold text-gray-600">
-            What you really need ?
-          </p>
+     
           <FiPhoneCall className="text-primary transition-all text-[5rem] lg:text-[10rem]  " />
         </a>
         <a
@@ -28,9 +26,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           <button className="font-primary  border-2 py-4 px-7 whitespace-nowrap border-gray-700 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all">
             Mail me if you are busy
           </button>
-          <p className="text-xs md:text-sm font-primary font-semibold text-gray-600 ">
-            What you really want ?
-          </p>
+       
           <FiMail className="text-primary transition-all text-[5rem] lg:text-[10rem]" />
         </a>
         <a
@@ -40,9 +36,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           <button className="font-primary  border-2 py-4 px-7 whitespace-nowrap border-gray-700 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all">
             Book a meeting
           </button>
-          <p className="text-xs md:text-sm font-primary font-semibold text-gray-600 text-center">
-            What are you searching
-          </p>
+        
           <FiCalendar className="text-primary transition-all text-[5rem] lg:text-[10rem] " />
         </a>
       </div>
