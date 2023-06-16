@@ -93,7 +93,7 @@ const StoryPage = () => {
             );
           }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+          <div className="grid grid-cols-2 mt-20 gap-5">
             <PhotoView src={story.photo1}>
               <img className="cursor-pointer" src={story.photo1} alt="" />
             </PhotoView>
@@ -102,7 +102,7 @@ const StoryPage = () => {
             </PhotoView>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+          <div className="grid grid-cols-2 mt-20 gap-5">
             <PhotoView src={story.photo3}>
               <img className="cursor-pointer" src={story.photo3} alt="" />
             </PhotoView>
@@ -111,7 +111,7 @@ const StoryPage = () => {
             </PhotoView>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+          <div className="grid grid-cols-2 mt-20 gap-5">
             <PhotoView src={story.photo5}>
               <img className="cursor-pointer" src={story.photo5} alt="" />
             </PhotoView>
@@ -119,7 +119,7 @@ const StoryPage = () => {
               <img className="cursor-pointer" src={story.photo6} alt="" />
             </PhotoView>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+          <div className="grid grid-cols-2 mt-20 gap-5">
             <PhotoView src={story.photo7}>
               <img className="cursor-pointer" src={story.photo7} alt="" />
             </PhotoView>
@@ -128,9 +128,9 @@ const StoryPage = () => {
             </PhotoView>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-5">
+          <div className="grid grid-cols-2 mt-20 gap-5">
             <PhotoView src={story.photo9}>
-              <img className="cursor-pointer" src={story.photo9} alt="" />
+              <img className="cursor-pointer " src={story.photo9} alt="" />
             </PhotoView>
             <PhotoView src={story.photo10}>
               <img className="cursor-pointer" src={story.photo10} alt="" />

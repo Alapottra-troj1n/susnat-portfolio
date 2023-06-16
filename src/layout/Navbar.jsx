@@ -1,9 +1,9 @@
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useNavigation, useParams } from "react-router-dom";
 import { scrollTo } from "../utils/scrollTo";
 
 const Navbar = ({ scrolled }) => {
   const location = useLocation();
-
+  const navigate = useNavigate();
  
 
   return (
@@ -45,7 +45,7 @@ const Navbar = ({ scrolled }) => {
           <Link to="/stories">
             <li>Stories</li>
           </Link>
-          <span className='cursor-pointer' onClick={()=> scrollTo('callme')}>
+          <span className='cursor-pointer' onClick={()=> scrollTo('callme', navigate)}>
             <li>Contact</li>
           </span>
         </div>
