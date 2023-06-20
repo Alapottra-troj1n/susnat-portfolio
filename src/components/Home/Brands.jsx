@@ -9,7 +9,7 @@ const Brands = () => {
     <div>
       <div className="max-w-6xl mx-auto px-5 lg:px-0 py-12 lg:py-32">
         <h2 className="text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">Brand Collaborations</h2>
-        <div className="flex gap-10 mt-10 items-center justify-between flex-wrap">
+        <div className="flex gap-10 mt-10 items-center justify-center flex-wrap">
           <img src={google} className="w-28 lg:w-48" alt="" />
           <img src={fashionHubb} className="w-28 lg:w-[170px] mb-3" alt="" />
           <img src={latrobe} className="w-28 lg:w-48" alt="" />
