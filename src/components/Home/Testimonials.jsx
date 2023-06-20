@@ -39,7 +39,7 @@ const Testimonials = () => {
   }
 
   return (
-    <div id="testomonials" className="bg-slate-400/5 lg:pb-32">
+    <div id="testomonials" className="bg-slate-400/5 lg:pb-32 ">
       <div className="  mx-auto px-5 py-12 lg:py-32">
         <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           TESTIMONIALS
@@ -52,7 +52,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 lg:px-0">
+      <div className="max-w-6xl mx-auto px-4 lg:px-0 mb-10 lg:mb-0">
         <Swiper
           breakpoints={{
             640: {
