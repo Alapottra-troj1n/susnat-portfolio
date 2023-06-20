@@ -15,7 +15,7 @@ const Introduction = ({ appointment }) => {
               className="w-[20rem] lg:w-[20rem] xl:w-[25rem] TEXT"
               alt=""
             />
-            <p className="text-sm font-primary mt-4 pr-10  2xl:pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
+            <p className="text-sm font-primary mt-4  2xl:pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
               I am Stan Chakma, a passionate photographer with over 8 years of
               experience in capturing stunning, personalized images. Let's
               connect and bring your vision to life, whether it's a wedding,

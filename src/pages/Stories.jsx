@@ -8,7 +8,7 @@ export default function Stories() {
 
   return (
     <div>
-      <div className="pt-44 lg:px-36 px-10 bg-cover bg-center ">
+      <div className="pt-44 lg:px-36 px-5 bg-cover bg-center ">
         <h2 className="font-display text-4xl lg:text-6xl text-center ">
           Stories
         </h2>
@@ -17,42 +17,42 @@ export default function Stories() {
           Photography
         </p>
       </div>
-      <div className="pt-16 pb-10 lg:pb-52 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-52 mx-auto text-center gap-8">
-        <Link to="/stories/wedding">
+      <div className="pt-16 pb-10 lg:pb-52 grid grid-cols-2 lg:grid-cols-3 px-10 lg:px-52 mx-auto text-center gap-5 lg:gap-8">
+        <Link className="col-span-1" to="/stories/wedding">
           <div
             style={{ backgroundImage: `url(${"/wedding.jpg"})` }}
-            className="relative rounded-md overflow-hidden min-h-[25rem] p-5 bg-cover   tracking-widest"
+            className="relative rounded-md overflow-hidden min-h-[15rem] lg:min-h-[25rem] p-5 bg-cover tracking-widest"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-100 hover:opacity-0 transition duration-500 ease-out"></div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/70 px-5 ">
-              <h2 className="font-display text-xl whitespace-nowrap  text-black">
-                Wedding Stories
+              <h2 className="font-display text-xs md:text-base lg:text-xl whitespace-nowrap  text-black">
+              Wedding & Couple
               </h2>
             </div>
           </div>
         </Link>
-        <Link to="/stories/birthday">
+        <Link className="col-span-1" to="/stories/birthday">
           <div
             style={{ backgroundImage: `url(${"/birthday.jpg"})` }}
-            className="relative rounded-md overflow-hidden min-h-[25rem] p-5 bg-cover text-white tracking-widest"
+            className="relative rounded-md overflow-hidden min-h-[15rem] lg:min-h-[25rem] p-5 bg-cover text-white tracking-widest"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-100 hover:opacity-0 transition duration-500 ease-out"></div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/70 px-5 ">
-              <h2 className="font-display text-xl whitespace-nowrap  text-black">
-                Birthday Stories
+              <h2 className="font-display text-xs md:text-base lg:text-xl whitespace-nowrap  text-black">
+              Birthday & Family
               </h2>
             </div>
           </div>
         </Link>
-        <Link to="/stories/product">
+        <Link className="col-span-2 lg:col-span-1 " to="/stories/product">
           <div
             style={{ backgroundImage: `url(${"/product.webp"})` }}
-            className="relative rounded-md overflow-hidden min-h-[25rem] p-5 bg-cover bg-center text-white tracking-widest"
+            className="relative rounded-md overflow-hidden min-h-[15rem] lg:min-h-[25rem] p-5 bg-cover bg-center text-white tracking-widest"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-100 hover:opacity-0 transition duration-500 ease-out"></div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/70 px-5 ">
-              <h2 className="font-display text-xl whitespace-nowrap  text-black">
-                Product Stories
+              <h2 className="font-display text-sm md:text-base lg:text-lg whitespace-nowrap  text-black">
+              Products & Commerical
               </h2>
             </div>
           </div>
