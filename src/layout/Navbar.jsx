@@ -45,7 +45,7 @@ const Navbar = ({ scrolled }) => {
           <Link to="/stories">
             <li>Stories</li>
           </Link>
-          <span className='cursor-pointer' onClick={()=> scrollTo('callme', navigate)}>
+          <span className='cursor-pointer' onClick={()=> scrollTo('calltoaction', navigate)}>
             <li>Contact</li>
           </span>
         </div>
