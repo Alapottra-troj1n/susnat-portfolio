@@ -6,7 +6,7 @@ const Contact = ({ appointment }) => {
     <div id="contact">
       <div
         ref={appointment}
-        className="container mx-auto px-5 pt-12 lg:py-32 min-h-screen"
+        className="max-w-6xl mx-auto px-5 pt-12 lg:py-32 min-h-screen"
       >
         <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           SHEDULE A MEETING
