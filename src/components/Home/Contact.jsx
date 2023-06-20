@@ -18,9 +18,9 @@ const Contact = ({ appointment }) => {
           </p>
         </div>
         <div className="flex justify-center mt-4 lg:mt-10 lg:mb-10 h-screen ">
-          <div className="h-full w-full">
+          
           <CalendlyWidget />
-          </div>
+
         </div>
       </div>
     </div>
