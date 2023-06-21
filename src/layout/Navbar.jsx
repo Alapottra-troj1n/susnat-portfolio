@@ -4,19 +4,19 @@ import { scrollTo } from "../utils/scrollTo";
 const Navbar = ({ scrolled }) => {
   const location = useLocation();
   const navigate = useNavigate();
- 
+  const targetPaths = ["/stories", "/packages"];
 
   return (
-    <header>
+    <header className={`fixed w-full  ${
+      scrolled || targetPaths.some((path) => location.pathname.includes(path))
+        ? "drop-shadow-md bg-white text-slate-700"
+        : "lg:text-white bg-white lg:bg-inherit"
+    } z-50`}>
       <div
-        className={`px-5   lg:px-36 py-4 font-display flex justify-between items-center fixed w-full  ${
-          scrolled || location.pathname.includes("/stories")
-            ? "drop-shadow-md bg-white text-slate-700"
-            : "lg:text-white bg-white lg:bg-inherit"
-        } list-none z-50`}
+        className={`px-5 py-4 max-w-6xl mx-auto font-display flex justify-between items-center list-none `}
       >
         <div>
-          {scrolled || location.pathname.includes("/stories") ? (
+          {scrolled || targetPaths.some((path) => location.pathname.includes(path)) ? (
             <>
               <Link to="/">
                 <img src="/logo.svg" className="w-16 md:w-20" alt="" />

@@ -72,7 +72,7 @@ const StoryPage = () => {
           {formattedDate}
         </p>
       </div>
-      <div className="py-24 lg:px-40 2xl:px-96 px-10">
+      <div className="py-24 lg:max-w-6xl mx-auto px-10">
         <p className="text-gray-400 font-normal leading-8 font-primary text-sm lg:text-base">
           {story.description}
         </p>
