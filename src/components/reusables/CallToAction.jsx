@@ -3,7 +3,7 @@ import { FiCalendar, FiMail, FiPhoneCall } from "react-icons/fi";
 
 const CallToAction = ({ scrolltoAppointment }) => {
   return (
-    <div className="max-w-6xl mx-auto flex justify-center mt-5 md:mt-14 xl:mt-24">
+    <div className="max-w-6xl mx-auto flex justify-center my-5 md:mt-14 xl:mt-24">
       <div
         className={`text-gray-700 grid grid-cols-3 text-sm md:text-base lg:text-base xl:text-2xl  gap-5 p-3`}
         style={{ transition: "all 0.5s ease-in-out" }}
