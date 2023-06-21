@@ -6,6 +6,7 @@ import Stories from "../pages/Stories";
 import Wedding from "../pages/stories/Wedding";
 import Birthday from "../pages/stories/Birthday";
 import Product from "../pages/stories/Product";
+import Packages from "../pages/Packages";
 
 
 const routes = createBrowserRouter([
@@ -17,9 +18,14 @@ const routes = createBrowserRouter([
           path: "/",
           element: <Home />,
         },
+        
         {
           path: "/stories",
           element: <Stories/>,
+        },
+        {
+          path: "/packages",
+          element: <Packages/>,
         },
         {
           path: "/stories/wedding",
