@@ -51,8 +51,8 @@ const RecentStories = () => {
 
 
   return (
-    <div className="bg-slate-400/5 py-12 lg:py-32 px-5 lg:px-0 mx-auto ">
-      <div className="pb-5">
+    <div className="bg-slate-400/5 py-12 px-5 lg:px-0 mx-auto ">
+      <div className="pb-12">
         <div className=" text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
           <h2 className="text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
             RECENT STORIES

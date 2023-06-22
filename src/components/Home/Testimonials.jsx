@@ -39,8 +39,8 @@ const Testimonials = () => {
   }
 
   return (
-    <div id="testomonials" className="bg-slate-400/5 lg:pb-32 pb-10">
-      <div className="  mx-auto px-5 py-12 lg:py-32">
+    <div id="testomonials" className="bg-slate-400/5 py-12">
+      <div className="  mx-auto px-5 lg:px-0 pb-16">
         <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           TESTIMONIALS
         </h2>
