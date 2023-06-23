@@ -8,14 +8,14 @@ const Introduction = ({ appointment }) => {
   return (
     <div id="aboutme" className="bg-white pt-[7rem] lg:pt-32 max-w-6xl mx-auto">
       <div className=" flex flex-col justify-center mx-auto ">
-        <div className="container mx-auto px-5 lg:px-0 grid lg:grid-cols-2 grid-cols-1 gap-10 lg:relative">
+        <div className="container mx-auto px-5 lg:px-0 grid lg:grid-cols-2 grid-cols-1 gap-10 2xl:gap-15 lg:relative">
           <div className="flex flex-col justify-center items-center lg:items-start order-2 ">
             <img
               src="/hey.svg"
               className="w-[20rem] lg:w-[20rem] xl:w-[25rem] TEXT"
               alt=""
             />
-            <p className="text-sm font-primary mt-4  2xl:pr-24 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
+            <p className="text-sm font-primary mt-4  2xl:pr-10 text-left lg:text-base xl:text-lg text-gray-500 lg:w-[85%] xl:w-[80%] lg:leading-7 leading-6 xl:leading-7 ">
               I am Stan Chakma, a passionate photographer with over 8 years of
               experience in capturing stunning, personalized images. Let's
               connect and bring your vision to life, whether it's a wedding,
