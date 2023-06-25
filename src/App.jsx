@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setLoading } from "./features/appSlice/appSlice";
 import LoadWrapper from "./components/wrappers/LoadWrapper";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function App() {
     <div>
       <LoadWrapper>
         <RouterProvider router={routes} />
+        <Analytics />
       </LoadWrapper>
     </div>
   );
