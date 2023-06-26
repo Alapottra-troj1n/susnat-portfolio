@@ -15,7 +15,7 @@ const Testimonials = () => {
     client
       .fetch(
         `*[_type == "testimonial"]{
-            "_id": id,
+          "_id": _id,
             "designation": designation,
             "name": name,
             "testimonial": testimonial,
@@ -28,7 +28,6 @@ const Testimonials = () => {
       });
   }, []);
 
-  console.log(testimonials)
 
   if (testimonials) {
     content = testimonials.map((testimonial) => (
@@ -44,8 +43,7 @@ const Testimonials = () => {
         <h2 className=" text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
           TESTIMONIALS
         </h2>
-        <div
-          className="text-xs md:text-sm lg:text-lg mt-3 tracking-wider text-center  font-primary px-[2rem]  xl:px-[16rem] 2xl:px-[25rem]">
+        <div className="text-xs md:text-sm lg:text-lg mt-3 tracking-wider text-center  font-primary px-[2rem]  xl:px-[16rem] 2xl:px-[25rem]">
           <h2 className="leading-6 text-gray-500">
             My satisfied clients are the heartbeat of the business.
           </h2>

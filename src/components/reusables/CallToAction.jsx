@@ -13,7 +13,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           href="tel:+61415865704"
          
         >
-          <button className="font-primary lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700 font-semibold hover:bg-gray-700 hover:text-white transition-all">
+          <button className="font-primary lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700 font-semibold hover:bg-gray-700 hover:text-white hover:rounded-full transition-all">
             Let's have a call
           </button>
      
@@ -23,7 +23,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           className="rounded-xl p-5 lg:p-12 flex flex-col items-center gap-5 lg:px-24"
           href="mailto:stan.visuals01@gmail.com"
         >
-          <button className="font-primary  lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700  font-semibold hover:bg-gray-700 hover:text-white transition-all">
+          <button className="font-primary  lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700  font-semibold hover:bg-gray-700 hover:text-white hover:rounded-full  transition-all">
            Mail Me
           </button>
        
@@ -33,7 +33,7 @@ const CallToAction = ({ scrolltoAppointment }) => {
           onClick={scrolltoAppointment}
           className="rounded-xl p-5 lg:p-12 flex flex-col items-center gap-5 lg:px-24"
         >
-          <button className="font-primary lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700 font-semibold hover:bg-gray-700 hover:text-white transition-all">
+          <button className="font-primary lg:py-4 lg:px-7 px-3 py-2 whitespace-nowrap border-gray-700 font-semibold hover:bg-gray-700 hover:text-white hover:rounded-full transition-all">
             Book a meeting
           </button>
         

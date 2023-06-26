@@ -7,35 +7,46 @@ import Spinner from "../reusables/Spinner";
 
 const RecentStories = () => {
   const [stories, setStories] = useState([]);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setLoading(true)
+    setLoading(true);
     client
       .fetch(
-        `*[_type == "story" && publishedAt < now()] | order(_createdAt desc) [0...5] {
+        `*[
+          _type == "story" &&
+          featuredStory == true &&
+          publishedAt < now()
+        ]
+        | order(_createdAt desc)
+        {
           "slug": slug.current,
           "_id": _id,
           "title": title,
-          "mainImage": mainImagePC.asset->url,
+          "featured": featuredStory,
+          "mainImage": mainImagePC.asset->url
         }
         `
       )
       .then((data) => {
         setStories(data);
-        setLoading(false)
+        setLoading(false);
       })
-      .catch((err)=> {
-          console.log(err)
-          setLoading(false)
-      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
   }, []);
 
+  console.log(stories);
 
-
-  if(loading){
-    return <div className="bg-slate-400/5 py-32 flex justify-center items-center "><Spinner/> </div>
+  if (loading) {
+    return (
+      <div className="bg-slate-400/5 py-32 flex justify-center items-center ">
+        <Spinner />{" "}
+      </div>
+    );
   }
 
   let content;
@@ -46,16 +57,15 @@ const RecentStories = () => {
     ));
   }
   if (!stories.length && !stories) {
-    content = <p className="text-center">No Stories Found</p>
+    content = <p className="text-center">No Stories Found</p>;
   }
-
 
   return (
     <div className="bg-slate-400/5 py-12 px-5 lg:px-0 mx-auto ">
       <div className="pb-12">
         <div className=" text-2xl click hover:text-dark flex flex-col items-center gap-3 ">
           <h2 className="text-2xl lg:text-5xl 2xl:text-6xl font-display font-thin text-center">
-            RECENT STORIES
+            FEATURED STORIES
           </h2>
           <div
             className=" md:text-sm lg:text-lg mt-0 tracking-wider text-center px-[2rem] md:px-[10rem] lg:px-[15rem] xl:px-[20rem] 2xl:px-[37rem] font-primary text-xs
@@ -65,7 +75,6 @@ const RecentStories = () => {
               I love to help people embrace imperfections and cherish genuine
               moments, creating a meaningful experience to treasure forever.
             </h2>
-          
           </div>
         </div>
       </div>
