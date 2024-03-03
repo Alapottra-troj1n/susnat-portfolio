@@ -19,14 +19,14 @@ export default function Packages() {
             </div>
             <div className=" rounded-bl-md rounded-br-md p-5 w-full overflow-hidden ">
               <h3 className="text-xl font-bold font-display text-center">
-                SPARKLE SESSION
+                MINI SESSION
               </h3>
               <p className="text-center text-3xl my-2 font-display font-bold">
                 450 AUD
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Premium Edited Photos</p>
+                <p>Unlimited Premium Edited Photos</p>
                 <p>Duration : 2 Hours</p>
 
                 <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
@@ -36,7 +36,7 @@ export default function Packages() {
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
                   <TiTick className="text-xl text-green-400" /> 250 AUD for a
-                  2-minute cinematic masterpiece
+                  up to 2-minute cinematic video
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
@@ -64,7 +64,7 @@ export default function Packages() {
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Premium Edited Photos</p>
+              <p>Unlimited Premium Edited Photos</p>
                 <p>Duration : 4 Hours</p>
 
                 <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
@@ -73,12 +73,12 @@ export default function Packages() {
 
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
-                  2-minute cinematic masterpiece
+                  <TiTick className="text-xl text-green-400" /> 300 AUD for a
+                  2-3minute cinematic video
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250 AUD for a
+                  <TiTick className="text-2xl text-green-400" /> 250-350 AUD for a
                   personalized photobook (50-80 photos)
                 </p>
                 <p className="text-xs text-center mt-4 text-gray-400">
@@ -98,7 +98,7 @@ export default function Packages() {
             </div>
             <div className=" rounded-bl-md rounded-br-md p-5 w-full overflow-hidden ">
               <h3 className="text-xl font-bold font-display text-center">
-                Dream Day Delight
+                Big Day
               </h3>
               <p className="text-center text-3xl my-2 font-display font-bold">
                 1350 AUD
@@ -114,12 +114,12 @@ export default function Packages() {
 
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
-                  2-minute cinematic masterpiece
+                  <TiTick className="text-xl text-green-400" /> 400 AUD for a
+                  3-5minute cinematic masterpiece
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250 AUD for a
+                  <TiTick className="text-2xl text-green-400" /> 250-500 AUD for a
                   personalized photobook (50-150 photos)
                 </p>
                 <p className="text-xs text-center mt-4 text-gray-400">
@@ -138,8 +138,8 @@ export default function Packages() {
           <div className="shadow-md overflow-hidden rounded-md">
             <div className="h-[20rem] w-full overflow-hidden rounded-tl-md rounded-tr-md">
               <img
-                src="/classic_capture.jpg"
-                className="object-cover"
+                src="/video_2.jpg"
+                className="object-cover h-full"
                 alt="photos"
               />
             </div>
@@ -166,11 +166,7 @@ export default function Packages() {
                   <TiTick className="text-xl text-green-400" /> 250 AUD for a
                   2-minute cinematic masterpiece
                 </p>
-                <p className="text-sm mt-2 flex gap-2 items-center">
-                  {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250 AUD for a
-                  personalized photobook (50-150 photos)
-                </p>
+              
               </div>
             </div>
           </div>
@@ -178,8 +174,8 @@ export default function Packages() {
           <div className="shadow-md overflow-hidden rounded-md">
             <div className="h-[20rem] w-full overflow-hidden rounded-tl-md rounded-tr-md">
               <img
-                src="/classic_capture.jpg"
-                className="object-cover"
+                src="/video_1.jpg"
+                className="object-cover h-full"
                 alt="photos"
               />
             </div>
@@ -206,11 +202,7 @@ export default function Packages() {
                   <TiTick className="text-xl text-green-400" /> 250 AUD for a
                   2-minute cinematic masterpiece
                 </p>
-                <p className="text-sm mt-2 flex gap-2 items-center">
-                  {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250 AUD for a
-                  personalized photobook (50-150 photos)
-                </p>
+              
                 <p className="text-xs text-center mt-4 text-gray-400">
                   You can add addons from previous packages{" "}
                 </p>
