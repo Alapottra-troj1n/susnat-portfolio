@@ -26,8 +26,8 @@ export default function Packages() {
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Unlimited Premium Edited Photos</p>
-                <p>Duration : 2 Hours</p>
+                <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Unlimited Premium Edited Photos</p>
+                <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Duration : 2 Hours</p>
 
                 <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
                   Addons :
@@ -35,12 +35,12 @@ export default function Packages() {
 
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
+              250 AUD for a
                   up to 2-minute cinematic video
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
+                   250 AUD for a
                   personalized photobook (50 photos)
                 </p>
               </div>
@@ -64,8 +64,8 @@ export default function Packages() {
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-              <p>Unlimited Premium Edited Photos</p>
-                <p>Duration : 4 Hours</p>
+              <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Unlimited Premium Edited Photos</p>
+                <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Duration : 4 Hours</p>
 
                 <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
                   Addons :
@@ -73,12 +73,12 @@ export default function Packages() {
 
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 300 AUD for a
+                  300 AUD for a
                   2-3minute cinematic video
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250-350 AUD for a
+                 250-350 AUD for a
                   personalized photobook (50-80 photos)
                 </p>
                 <p className="text-xs text-center mt-4 text-gray-400">
@@ -105,8 +105,8 @@ export default function Packages() {
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Premium Edited Photos</p>
-                <p>Duration : 8 Hours</p>
+              <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Unlimited Premium Edited Photos</p>
+                <p className="flex gap-2 items-center">  <TiTick className="text-xl text-green-400" />Duration 8 Hours</p>
 
                 <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
                   Addons :
@@ -114,12 +114,12 @@ export default function Packages() {
 
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-xl text-green-400" /> 400 AUD for a
+                   400 AUD for a
                   3-5minute cinematic masterpiece
                 </p>
                 <p className="text-sm mt-2 flex gap-2 items-center">
                   {" "}
-                  <TiTick className="text-2xl text-green-400" /> 250-500 AUD for a
+                 250-500 AUD for a
                   personalized photobook (50-150 photos)
                 </p>
                 <p className="text-xs text-center mt-4 text-gray-400">
@@ -151,21 +151,16 @@ export default function Packages() {
                 750 AUD
               </p>
 
+
+
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Mini Teaser (1-2min)</p>
-                <p>3-5 Minute Cinematic Trailers</p>
-                <p>20+ Minute Video or More as Required</p>
-                <p>Duration : 4 Hours</p>
+              <h3 className="text-lg mb-2 font-semibold">What's Included ?</h3>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> Mini Teaser (1-2min)</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> 3-5 Minute Cinematic Trailers</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> 20+ Minute Video or More as Required</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> Duration : 4 Hours</p>
 
-                <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
-                  Addons :
-                </h2>
-
-                <p className="text-sm mt-2 flex gap-2 items-center">
-                  {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
-                  2-minute cinematic masterpiece
-                </p>
+             
               
               </div>
             </div>
@@ -188,24 +183,13 @@ export default function Packages() {
               </p>
 
               <div className="text-left font-primary mt-3 text-gray-600 font-medium">
-                <p>Mini Teaser (1-2min)</p>
-                <p>3-5 Minute Cinematic Trailers</p>
-                <p>45+ Minute Video or More as Required</p>
-                <p>Duration : 8 Hours</p>
+                <h3 className="text-lg mb-2 font-semibold">What's Included ?</h3>
+              <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> Mini Teaser (1-2min)</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> 3-5 Minute Cinematic Trailers</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> 45+ Minute Video or More as Required</p>
+                <p className="flex gap-2 items-center mb-1"> <TiTick className="text-xl text-green-400" /> Duration : 8 Hours</p>
 
-                <h2 className="text-xl font-display font-bold mt-2 text-gray-800 ">
-                  Addons :
-                </h2>
-
-                <p className="text-sm mt-2 flex gap-2 items-center">
-                  {" "}
-                  <TiTick className="text-xl text-green-400" /> 250 AUD for a
-                  2-minute cinematic masterpiece
-                </p>
-              
-                <p className="text-xs text-center mt-4 text-gray-400">
-                  You can add addons from previous packages{" "}
-                </p>
+                
               </div>
             </div>
           </div>
